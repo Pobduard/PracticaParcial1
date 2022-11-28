@@ -2,7 +2,7 @@ package  Aerolinea;
 public class Piloto extends Personas{
     private int horas;
 
-    void Piloto(){};
+    public Piloto(){};
 
     public Piloto(int horas) {
         this.horas = horas;
@@ -13,22 +13,20 @@ public class Piloto extends Personas{
         this.horas = horas;
     }
 
-    int gethoras(){
+    public int getHoras(){
         return horas;
     }
 
     @Override
     public void mostrar(){
-        System.out.println("Nombre:" + Pasajero.getnombre()+ "Edad:" + Pasajero.getedad()+ "Categoria" + Pasajero.getcategoria()+
-        "\nHoras de Vuelo:" + Piloto.gethoras());
+        System.out.println("Nombre:" + this.getNombre() + "Edad:" + this.getEdad() + "Categoria" + this.getCategoria()+
+        "\nHoras de Vuelo:" + this.horas);
     }
 
     @Override
     public void calcularCategoria(){
     // Pilotos
-        else if(datos_persona[4]==3){
-            if(datos_persona[5] < 1500){categoria = "Capitán";};
-            else if(datos_persona[5] >= 1500){categoria = "1er Piloto";};
-        }
+            if(this.horas < 1500){this.categoria = "Capitán";}
+            else if(this.horas >= 1500){this.categoria = "1er Piloto";}
     }
 }

@@ -27,7 +27,7 @@ public class Vuelos {
     //metodo mostrar
 
     public String mostrar(){
-        String datosDeVuelo = getNombre() + " - " + getVuelo() + " - " + getDestino();
+        String datosDeVuelo = this.getNombre() + " - " + this.getVuelo() + " - " + this.getDestino();
         return datosDeVuelo;
     }
 

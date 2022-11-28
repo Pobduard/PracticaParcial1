@@ -40,7 +40,7 @@ public class Personas {
     }
 
     //Metodo mostrar
-    public Void mostrar(){
+    public void mostrar(){
     }
 
     //Metodo calcular categoria
@@ -50,22 +50,22 @@ public class Personas {
     //getters
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public int getEdad() {
-        return edad;
+        return this.edad;
     }
 
     public int getVuelo() {
-        return vuelo;
+        return this.vuelo;
     }
 
     public String getCategoria() {
-        return categoria;
+        return this.categoria;
     }
 }

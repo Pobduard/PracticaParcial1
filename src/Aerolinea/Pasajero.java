@@ -5,45 +5,45 @@ public class Pasajero extends Personas{
 
     public Pasajero(){
     }
-    public Pasajero(String nombre, int edad, int vuelo, String categoria, String numAsiento) {
+    public Pasajero(String nombre, int edad, int vuelo, String categoria, String num_Asiento, int valor_Pasaje) {
         super(nombre, edad, vuelo, categoria);
-        this.numAsiento = numAsiento;
-        this.valorPasaje = valorPasaje;
+        this.numAsiento = num_Asiento;
+        this.valorPasaje = valor_Pasaje;
     }
 
     //Getters
     public String getNumAsiento() {
-        return numAsiento;
+        return this.numAsiento;
     }
 
     public int getValorPasaje() {
-        return valorPasaje;
+        return this.valorPasaje;
     }
 
 
     @Override
-    public Void mostrar(){
-         System.out.println("Nombre:" + getNombre() + "Edad:" + getEdad()+ "Categoria" + getCategoria()+
-                "\nAsiento:" + getNumAsiento() + "Valor:" + getValorPasaje());
+    public void mostrar(){
+         System.out.println("Nombre:" + this.getNombre() + "Edad:" + this.getEdad()+ "Categoria" + this.getCategoria()+
+                "\nAsiento:" + this.getNumAsiento() + "Valor:" + this.getValorPasaje());
     }
 
-
-    /*void Pasajero(String nombre, int edad, int vuelo, String categoria){};
-
-    void Pasajero(String nombre, int edad, int vuelo, String categoria, String Num_Asiento, int Valor_Pasaje){
-        this.numAsiento = datos_persona[5];
-        this.valorPasaje = datos_persona[6];
-    };
-
-
-
+    @Override
+    public void calcularCategoria(){
+    // Pasajeros
+            if(this.getValorPasaje() < 450){ this.categoria = "Economica";}
+            else if(this.getValorPasaje() == 450){ this.categoria = "Turista";}
+            else if(this.getValorPasaje() > 450){ this.categoria = "1ra Clase";};
+    }
+}
 
 
-*//* Para los pasajeros: si el valor del pasaje es menor a 450 Bs su categoría es
+
+/* 
+Para los pasajeros: si el valor del pasaje es menor a 450 Bs su categoría es
 “Económica” y si es superior es “1era Clase”. Si es igual a 450Bs su categoría es
 “Turista”
 o Para las azafatas: si su edad <22 y habla máximo 2 idiomas es “Aprendiz”, si su edad es >=22 y habla máximo 2 idiomas es “Auxiliar”, si habla más de 2 idiomas es “Titular”
-o Para el piloto: si tiene más de 1500 *//*
+o Para el piloto: si tiene más de 1500
 
     @Override
     public void calcularCategoria(){
@@ -53,7 +53,7 @@ o Para el piloto: si tiene más de 1500 *//*
             else if(Pasajero.getvalorpasaje() > 450){ categoria = "1ra Clase";};
             else if(Pasajero.getvalorpasaje() = 450){ categoria = "Turista";};
         }
-*//*     // Azafatas
+    // Azafatas
         else if(datos_persona[4] ==  2){
             if((edad < 22) && (datos_persona[6]) < 2){categoria ="Aprendiz"};
             else if((edad >= 22) && (datos_persona[6]) < 2){categoria ="Auxiliar"};
@@ -64,5 +64,5 @@ o Para el piloto: si tiene más de 1500 *//*
             if(datos_persona[5] < 1500){categoria = "Capitán";};
             else if(datos_persona[5] >= 1500){categoria = "1er Piloto";};
         }
-    }*/
-}
+    }
+     */
