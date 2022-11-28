@@ -1,3 +1,5 @@
+import data.Datos;
+
 public class Azafata extends Personas{
     private double altura;
     private int idiomas;
@@ -5,7 +7,7 @@ public class Azafata extends Personas{
     void Azafata(){};
 
     void Azafata(String nombre, int edad, int vuelo, String categoria, double altura, int idiomas){
-        this.altura = datos_personas[5];
+        this.altura = Datos.class.datos_personas[5];
         this.idiomas = datos_personas[6];
     }
 
