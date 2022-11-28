@@ -1,10 +1,16 @@
+package  Aerolinea;
 public class Piloto extends Personas{
     private int horas;
 
     void Piloto(){};
 
-    void Piloto(String nombre, int edad, int vuelo, String categoria, int horas){
-        this.horas = datos_personas[5];
+    public Piloto(int horas) {
+        this.horas = horas;
+    }
+
+    public Piloto(String nombre, int edad, int vuelo, String categoria, int horas) {
+        super(nombre, edad, vuelo, categoria);
+        this.horas = horas;
     }
 
     int gethoras(){

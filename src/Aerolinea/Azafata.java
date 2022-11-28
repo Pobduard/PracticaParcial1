@@ -1,3 +1,5 @@
+package Aerolinea;
+
 public class Azafata extends Personas{
     private double altura;
     private int idiomas;
