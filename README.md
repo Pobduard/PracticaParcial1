@@ -1,20 +1,30 @@
+> git clone     (Copia el proyecto entero actualizado)
+> git add .   (Añade todos los archivos a ser guardados de forma local)
+> git commit -m "Mensaje"   (Lugar donde se guardan de forma local)
+> git push u- origin [rama] (que suba todo lo que hay actualmente en esta carpeta desde ‘origen’ a la rama ‘[Rama]’ de nuestro repositorio)
+> git pull  (Sgiti trabajamos en equipo y otros desarrolladores se encuentran haciendo “push”, necesitaremos “bajar” esas versiones, para ello necesitamos actualizar nuestro repositorio local al commit más nuevo, usamos git pull para poder actualizar y fusionar los últimos cambios en remoto.)
+
+##Ramas 
+>Para crear una nueva rama y saltar a ella usa git checkout -b ramanueva
+>Para volver a la rama principal git checkout master
+>Para borrar la rama git branch -d ramanueva
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
+Bienvenido al mundo de Java en VsCode. Aqui hay una pequeña guia de las carpetas:
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+El Espacio de Trabaja contiene 2 carpertas:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `src`: La que contiene los main
+- `lib`: la que contiene las dependencias 
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Mientrastanto, las archivos compilados estaran en la caperta `bin` por defecto.
 
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 
 
+https://www.codigonexo.com/wp-content/uploads/2015/05/git-transport.png
