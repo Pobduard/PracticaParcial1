@@ -6,7 +6,7 @@
 - `git push u- origin [rama] ` (que suba todo lo que hay actualmente en esta carpeta desde ‘origen’ a la rama ‘[Rama]’ de nuestro repositorio)
 - `git pull `  (Sgiti trabajamos en equipo y otros desarrolladores se encuentran haciendo “push”, necesitaremos “bajar” esas versiones, para ello necesitamos actualizar nuestro repositorio local al commit más nuevo, usamos git pull para poder actualizar y fusionar los últimos cambios en remoto.)
 
-##Ramas 
+## Ramas 
 - ` git checkout -b ramanueva ` (Para crear una nueva rama y saltar a ella usa)  
 - `git checkout master ` (Para volver a la rama principal )
 - `git branch -d ramanueva ` (Para borrar la rama )
