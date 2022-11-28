@@ -3,15 +3,30 @@ public class Pasajero extends Personas{
     private String numAsiento;
     private int valorPasaje;
 
-
+    public Pasajero(){
+    }
     public Pasajero(String nombre, int edad, int vuelo, String categoria, String numAsiento) {
         super(nombre, edad, vuelo, categoria);
         this.numAsiento = numAsiento;
         this.valorPasaje = valorPasaje;
     }
 
-    //aqui toca crear un constructor por defecto pero no se muy bien si el por
-    //defecto debe inicializar en 0 y null o simplemente estar vacios
+    //Getters
+    public String getNumAsiento() {
+        return numAsiento;
+    }
+
+    public int getValorPasaje() {
+        return valorPasaje;
+    }
+
+
+    @Override
+    public Void mostrar(){
+         System.out.println("Nombre:" + getNombre() + "Edad:" + getEdad()+ "Categoria" + getCategoria()+
+                "\nAsiento:" + getNumAsiento() + "Valor:" + getValorPasaje());
+    }
+
 
     /*void Pasajero(String nombre, int edad, int vuelo, String categoria){};
 
@@ -20,20 +35,8 @@ public class Pasajero extends Personas{
         this.valorPasaje = datos_persona[6];
     };
 
-    //Getters
-    public String getnumasiento() {
-        return numAsiento;
-    }
 
-    public int getvalorpasaje() {
-        return valorPasaje;
-    }
 
-    @Override
-    public void mostrar(){
-        System.out.println("Nombre:" + Pasajero.getnombre()+ "Edad:" + Pasajero.getedad()+ "Categoria" + Pasajero.getcategoria()+
-        "\nAsiento:" + Pasajero.getnumasiento()+ "Valor:" + Pasajero.getvalorpasaje());
-    }
 
 
 *//* Para los pasajeros: si el valor del pasaje es menor a 450 Bs su categoría es

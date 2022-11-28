@@ -40,7 +40,7 @@ public class Personas {
     }
 
     //Metodo mostrar
-    public void mostrar(){
+    public Void mostrar(){
     }
 
     //Metodo calcular categoria

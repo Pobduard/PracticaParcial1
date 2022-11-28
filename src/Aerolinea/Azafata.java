@@ -1,4 +1,7 @@
+
 import data.Datos;
+package Aerolinea;
+
 
 public class Azafata extends Personas{
     private double altura;
