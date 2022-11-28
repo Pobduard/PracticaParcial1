@@ -43,7 +43,24 @@ public class Personas {
     }
 
     //Metodo calcular categoria
-    public void calcular(){
+    public void calcularCategoria(){
 
+    //Getters
+    public String getnombre() {
+        return aerolinea;
+    }
+
+    public int getedad() {
+        return vuelo;
+    }
+
+    public int getvuelo() {
+        return destino;
+    }
+
+    public String getcategoria(){
+        return categoria;
+    }
+}
     }
 }
