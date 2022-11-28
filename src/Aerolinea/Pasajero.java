@@ -1,9 +1,19 @@
-import Personas;
+package Aerolinea;
 public class Pasajero extends Personas{
     private String numAsiento;
     private int valorPasaje;
 
-    void Pasajero(String nombre, int edad, int vuelo, String categoria){};
+
+    public Pasajero(String nombre, int edad, int vuelo, String categoria, String numAsiento) {
+        super(nombre, edad, vuelo, categoria);
+        this.numAsiento = numAsiento;
+        this.valorPasaje = valorPasaje;
+    }
+
+    //aqui toca crear un constructor por defecto pero no se muy bien si el por
+    //defecto debe inicializar en 0 y null o simplemente estar vacios
+
+    /*void Pasajero(String nombre, int edad, int vuelo, String categoria){};
 
     void Pasajero(String nombre, int edad, int vuelo, String categoria, String Num_Asiento, int Valor_Pasaje){
         this.numAsiento = datos_persona[5];
@@ -26,11 +36,11 @@ public class Pasajero extends Personas{
     }
 
 
-/* Para los pasajeros: si el valor del pasaje es menor a 450 Bs su categoría es
+*//* Para los pasajeros: si el valor del pasaje es menor a 450 Bs su categoría es
 “Económica” y si es superior es “1era Clase”. Si es igual a 450Bs su categoría es
 “Turista”
 o Para las azafatas: si su edad <22 y habla máximo 2 idiomas es “Aprendiz”, si su edad es >=22 y habla máximo 2 idiomas es “Auxiliar”, si habla más de 2 idiomas es “Titular”
-o Para el piloto: si tiene más de 1500 */
+o Para el piloto: si tiene más de 1500 *//*
 
     @Override
     public void calcularCategoria(){
@@ -40,7 +50,7 @@ o Para el piloto: si tiene más de 1500 */
             else if(Pasajero.getvalorpasaje() > 450){ categoria = "1ra Clase";};
             else if(Pasajero.getvalorpasaje() = 450){ categoria = "Turista";};
         }
-/*     // Azafatas
+*//*     // Azafatas
         else if(datos_persona[4] ==  2){
             if((edad < 22) && (datos_persona[6]) < 2){categoria ="Aprendiz"};
             else if((edad >= 22) && (datos_persona[6]) < 2){categoria ="Auxiliar"};
@@ -50,6 +60,6 @@ o Para el piloto: si tiene más de 1500 */
         else if(datos_persona[4]==3){
             if(datos_persona[5] < 1500){categoria = "Capitán";};
             else if(datos_persona[5] >= 1500){categoria = "1er Piloto";};
-        } */
-    }
+        }
+    }*/
 }

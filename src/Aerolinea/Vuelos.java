@@ -11,12 +11,15 @@ package Aerolinea;
         • No contiene métodos setter*/
 
 public class Vuelos {
-    private String aerolinea;
+    private String nombre;
     private int vuelo;
     private String destino;
 
-    public Vuelos(String aerolinea, int vuelo, String destino) {
-        this.aerolinea = aerolinea;
+
+    public Vuelos(){
+    }
+    public Vuelos(String nombre, int vuelo, String destino) {
+        this.nombre = nombre;
         this.vuelo = vuelo;
         this.destino = destino;
     }
@@ -24,14 +27,14 @@ public class Vuelos {
     //metodo mostrar
 
     public String mostrar(){
-        String datosDeVuelo = getaerolinea() + " - " + getVuelo() + " - " + getDestino();
+        String datosDeVuelo = getNombre() + " - " + getVuelo() + " - " + getDestino();
         return datosDeVuelo;
     }
 
 
     //Getters
-    public String getaerolinea() {
-        return aerolinea;
+    public String getNombre() {
+        return nombre;
     }
 
     public int getVuelo() {

@@ -23,6 +23,7 @@ package Aerolinea;
 */
 
 public class Personas {
+    private int id;
     private String nombre;
     private int edad;
     private int vuelo;
@@ -44,23 +45,27 @@ public class Personas {
 
     //Metodo calcular categoria
     public void calcularCategoria(){
-
-    //Getters
-    public String getnombre() {
-        return aerolinea;
     }
 
-    public int getedad() {
+    //getters
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public int getVuelo() {
         return vuelo;
     }
 
-    public int getvuelo() {
-        return destino;
-    }
-
-    public String getcategoria(){
+    public String getCategoria() {
         return categoria;
-    }
-}
     }
 }
