@@ -1,13 +1,15 @@
-> git clone     (Copia el proyecto entero actualizado)
-> git add .   (Añade todos los archivos a ser guardados de forma local)
-> git commit -m "Mensaje"   (Lugar donde se guardan de forma local)
-> git push u- origin [rama] (que suba todo lo que hay actualmente en esta carpeta desde ‘origen’ a la rama ‘[Rama]’ de nuestro repositorio)
-> git pull  (Sgiti trabajamos en equipo y otros desarrolladores se encuentran haciendo “push”, necesitaremos “bajar” esas versiones, para ello necesitamos actualizar nuestro repositorio local al commit más nuevo, usamos git pull para poder actualizar y fusionar los últimos cambios en remoto.)
+## Basico
+- `git clone `     (Copia el proyecto entero actualizado)
+- `git add . `   (Añade todos los archivos a ser guardados de forma local)
+- `git status ` (Puede ver que archvos tiene subidos con el add)
+- `git commit -m "Mensaje" `  (Lugar donde se guardan de forma local)
+- `git push u- origin [rama] ` (que suba todo lo que hay actualmente en esta carpeta desde ‘origen’ a la rama ‘[Rama]’ de nuestro repositorio)
+- `git pull `  (Sgiti trabajamos en equipo y otros desarrolladores se encuentran haciendo “push”, necesitaremos “bajar” esas versiones, para ello necesitamos actualizar nuestro repositorio local al commit más nuevo, usamos git pull para poder actualizar y fusionar los últimos cambios en remoto.)
 
 ##Ramas 
->Para crear una nueva rama y saltar a ella usa git checkout -b ramanueva
->Para volver a la rama principal git checkout master
->Para borrar la rama git branch -d ramanueva
+- ` git checkout -b ramanueva ` (Para crear una nueva rama y saltar a ella usa)  
+- `git checkout master ` (Para volver a la rama principal )
+- `git branch -d ramanueva ` (Para borrar la rama )
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
