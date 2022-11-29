@@ -10,6 +10,7 @@ public class Azafata extends Personas{
         super(nombre, edad, vuelo, categoria);
         this.altura = altura;
         this.idiomas = idiomas;
+        this.calcularCategoria();
     }
 
     double getAltura(){
@@ -22,8 +23,8 @@ public class Azafata extends Personas{
 
     @Override
     public void mostrar(){
-        System.out.println("Nombre:" + this.getNombre()+ "Edad:" + this.getEdad()+ "Categoria" + this.getCategoria()+
-        "\nEstatura:" + this.getAltura()+ "Idiomas:" + this.getIdiomas());
+        System.out.println("Nombre: " + this.getNombre()+ "\tEdad: " + this.getEdad()+ "\tCategoria: " + this.getCategoria()+
+        "\nEstatura: " + this.getAltura()+ "\tIdiomas: " + this.getIdiomas() + "\n");
     }
 
     @Override

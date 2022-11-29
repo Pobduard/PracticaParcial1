@@ -9,6 +9,7 @@ public class Pasajero extends Personas{
         super(nombre, edad, vuelo, categoria);
         this.numAsiento = num_Asiento;
         this.valorPasaje = valor_Pasaje;
+        this.calcularCategoria();
     }
 
     //Getters
@@ -23,8 +24,8 @@ public class Pasajero extends Personas{
 
     @Override
     public void mostrar(){
-         System.out.println("Nombre:" + this.getNombre() + "Edad:" + this.getEdad()+ "Categoria" + this.getCategoria()+
-                "\nAsiento:" + this.getNumAsiento() + "Valor:" + this.getValorPasaje());
+         System.out.println("Nombre: " + this.getNombre() + "\tEdad: " + this.getEdad()+ "\tCategoria: " + this.getCategoria()+
+                "\nAsiento: " + this.getNumAsiento() + "\tValor: " + this.getValorPasaje()+ "\n");
     }
 
     @Override

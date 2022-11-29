@@ -11,6 +11,7 @@ public class Piloto extends Personas{
     public Piloto(String nombre, int edad, int vuelo, String categoria, int horas) {
         super(nombre, edad, vuelo, categoria);
         this.horas = horas;
+        this.calcularCategoria();
     }
 
     public int getHoras(){
@@ -19,8 +20,8 @@ public class Piloto extends Personas{
 
     @Override
     public void mostrar(){
-        System.out.println("Nombre:" + this.getNombre() + "Edad:" + this.getEdad() + "Categoria" + this.getCategoria()+
-        "\nHoras de Vuelo:" + this.horas);
+        System.out.println("Nombre: " + this.getNombre() + "\tEdad: " + this.getEdad() + "\tCategoria: " + this.getCategoria()+
+        "\nHoras de Vuelo: " + this.horas+ "\n");
     }
 
     @Override
